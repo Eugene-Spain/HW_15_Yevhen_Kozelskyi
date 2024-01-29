@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Bandage</title>
 </head>
 
@@ -34,30 +39,25 @@
                 <svg></svg>
             </div>
         </div>
-        <div class="header__wrapper">
-            <div class="header__navigation_holder">
-                <span class="header__logo-text">Bandage</span>
-
-                <nav class="header__navigation">
-                    
-                        <img src="assets/svg/search-header.svg" alt="search">
-                        <img src="assets/svg/cart-header.svg" alt="cart">
-                    
-                    <img class="header__navigation_menu" src="assets/svg/menu-header.svg" alt="menu">
-
-                    <div class="header__navigation_wrapper">
-                        <ul class="header__navigation_list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-
-                </nav>
-
-            </div>
+        <div class="header__icons-top">
+            <span class="logo-text">Bandage</span>
+            <img src="assets/svg/search-header.svg" alt="search">
+            <img src="assets/svg/cart-header.svg" alt="cart">
+            <img src="assets/svg/menu-header.svg" alt="menu">
         </div>
+        <nav class="navigation">
+            <label for="menu-handler">Menu</label>
+            <input class="mobile-menu-checkbox" type="checkbox" id="menu-handler">
+            <div class="navigation-wrapper">
+                <label class="close-menu" for="menu-handler">Menu</label>
+                <ul class="navigation-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="hero">
@@ -501,21 +501,5 @@
         </div>
     </footer>
 </body>
-<!-- <nav class="header__navigation">
-                            <label for="menu-handler"><img src="assets/svg/menu-header.svg" alt="menu"></label>                    
-                            <input class="header__navigation_mobile-menu-checkbox" type="checkbox" id="menu-handler">
-                            <label class="header__navigation_close-menu" for="menu-handler">
-                                <span class="material-symbols-outlined"> close</span>
-                            </label>
-                            <div class="header__navigation_wrapper">
-                            
-                                <ul class="header__navigation_list">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Product</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                            </nav> -->
 
 </html>

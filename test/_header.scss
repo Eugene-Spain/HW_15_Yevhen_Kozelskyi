@@ -1,0 +1,48 @@
+.header__top-info {
+    display: none;
+}
+
+.mobile-menu-checkbox {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.close-menu {
+    display: none;
+    position: absolute;
+    right: 15px;
+}
+
+.header {
+    .navigation .header__navigation_list {
+        display: none;
+        margin: auto;
+    }
+
+    .navigation .mobile-menu-checkbox:checked {
+        &+.navigation-wrapper {
+            top: 0;
+            position: fixed;
+            width: 100vw;
+            height: 100hv;
+            display: flex;
+            background-color: #fff;
+        }
+
+        &+.navigation-wrapper>.close-menu {
+            display: inline;
+        }
+
+        &+.navigation-wrapper>.navigation-list {
+            display: block;
+
+            li {
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
