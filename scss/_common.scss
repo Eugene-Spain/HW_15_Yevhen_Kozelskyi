@@ -1,6 +1,16 @@
 html{
     font-size: 10px;
+    @media screen and (min-width:768px){
+        font-size: 9px;
+    }
+    @media screen and (min-width:1024px){
+        font-size: 11px;
+    }
+    @media screen and (min-width:1440px){
+        font-size: 13px;
+    }
 }
+
 
 
 body {
@@ -66,4 +76,7 @@ h5{
 p {
     margin: 0;
     font-size: 1.4rem;
+}
+.material-symbols-outlined{
+    width: 12px;
 }

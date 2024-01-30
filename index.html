@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="css/homepage.css">
     <title>Bandage</title>
 </head>
@@ -17,25 +19,27 @@
 <body>
     <header class="header">
         <div class="header__top-info">
-            <div>
-                <span>
-                    <svg></svg>
-                    <telephone>(225) 555-0118</telephone>
-                </span>
-                <span>
-                    <svg></svg>
-                    <email>michelle.rivera@example.com</email>
-                </span>
-            </div>
-            <div>
-                <p>Follow Us and get a chance to win 80% off</p>
-            </div>
-            <div>
-                <p>Follow Us :</p>
-                <svg></svg>
-                <svg></svg>
-                <svg></svg>
-                <svg></svg>
+            <div class="header__top-info__wrapper">
+                <div class="header__top-info_contacts">
+                    <span class="header__top-info_tel">
+                        <img src="assets/svg/top/top-telephone.svg" alt="telephone">
+                        <span>(225) 555-0118</span>
+                    </span>
+                    <span class="header__top-info_email">
+                        <img src="assets/svg/top/top-email.svg" alt="email">
+                        <span>michelle.rivera@example.com</span>
+                    </span>
+                </div>
+                <div>
+                    <p>Follow Us and get a chance to win 80% off</p>
+                </div>
+                <div class="header__top-info_social-networks">
+                    <p>Follow Us :</p>
+                    <img src="assets/svg/top/top-instagram.svg" alt="instagram">
+                    <img src="assets/svg/top/top-youtube.svg" alt="youtube">
+                    <img src="assets/svg/top/top-facebook.svg" alt="facebook">
+                    <img src="assets/svg/top/top-twitter.svg" alt="twitter">
+                </div>
             </div>
         </div>
         <div class="header__wrapper">
@@ -62,15 +66,46 @@
 
             </div>
         </div>
+        <div class="header__wrapper-desktop">
+            <div class="header__menu-left">
+                <span class="header__logo-text">Bandage</span>
+                <nav class="header__navigation-desktop">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__login-block">
+                <div class="header__login-block_log-reg">
+                    <img src="assets/svg/login-header-blue.svg" alt="login">
+                    <a href="#">Login</a><span>/</span><a href="#">Register</a>
+                </div>
+                <img src="assets/svg/search-header-blue.svg" alt="search">
+                <div class="header__login-block_icons">
+                <img src="assets/svg/cart-header-blue.svg" alt="cart">
+                <span>1</span>
+                </div>
+                <div class="header__login-block_icons">
+                <img src="assets/svg/heart-header.svg" alt="heart">
+                <span>1</span>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <section class="hero">
+            <div class="hero__text-content">
             <span class="hero__pre-heading">Summer 2020</span>
             <h1>New collection</h1>
             <p class="hero__heading-description">We know how large objects
                 will act, but things on a
                 small scale.</p>
             <button>Shop Now</button>
+            </div>
             <picture>
                 <source media="(min-width:768px)" srcset="assets/img/red-girl-big.png">
                 <img src="assets/img/red-girl-small.png" alt="reg girl">

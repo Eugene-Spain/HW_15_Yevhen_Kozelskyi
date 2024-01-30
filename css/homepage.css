@@ -310,6 +310,21 @@ template {
 html {
   font-size: 10px;
 }
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 13px;
+  }
+}
 
 body {
   margin: 0;
@@ -377,23 +392,84 @@ p {
   font-size: 1.4rem;
 }
 
+.material-symbols-outlined {
+  width: 12px;
+}
+
 .header__top-info {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__top-info {
+    display: block;
+    margin: 0 auto;
+    width: 100vw;
+    background-color: #252B42;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .header__top-info p {
+    font-size: 1rem;
+  }
+  .header__top-info__wrapper {
+    display: flex;
+    margin: 9px 24px 0;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    height: 34px;
+    padding: 10px 0;
+  }
+  .header__top-info_contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .header__top-info_contacts img {
+    width: 12px;
+  }
+  .header__top-info_tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .header__top-info_email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .header__top-info_social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .header__top-info_social-networks p {
+    display: block;
+  }
 }
 
 .header {
   width: 100vw;
   margin: 0 auto;
 }
+.header__wrapper {
+  margin: 35px 35px 15px 35px;
+}
+.header__wrapper-desktop {
+  display: none;
+}
 .header__logo-text {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0.1px;
   color: #252B42;
-}
-.header__wrapper {
-  margin: 35px 35px 15px 35px;
 }
 .header__navigation {
   display: grid;
@@ -441,13 +517,81 @@ p {
   line-height: 45px;
   letter-spacing: 0.2px;
 }
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    display: none;
+  }
+  .header__logo-text {
+    font-size: 2rem;
+  }
+  .header__wrapper-desktop {
+    display: flex;
+    justify-content: space-between;
+    margin: 29px 24px 63px;
+  }
+  .header__menu-left {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+  }
+  .header__navigation-desktop ul {
+    display: flex;
+    gap: 15px;
+  }
+  .header__navigation-desktop ul a {
+    color: #737373;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .header__login-block {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: #23A6F0;
+  }
+  .header__login-block_log-reg {
+    display: flex;
+    gap: 5px;
+  }
+  .header__login-block_log-reg a {
+    color: #23A6F0;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .header__login-block_log-reg span {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .header__login-block img {
+    width: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__logo-text {
+    font-size: 2.4rem;
+  }
+  .header__navigation-desktop ul a {
+    font-size: 1.4rem;
+  }
+  .header__menu-left {
+    gap: 120px;
+  }
+  .header__login-block_log-reg a {
+    font-size: 1.4rem;
+  }
+  .header__login-block_log-reg span {
+    font-size: 1.4rem;
+  }
+}
 
 .hero {
-  border-radius: 20px;
-  background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
   width: 388px;
   margin: 0 auto;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
   padding-top: 80px;
+}
+.hero__text-content {
   display: flex;
   flex-direction: column;
   gap: 33px;
@@ -471,8 +615,8 @@ p {
   max-width: 291px;
 }
 .hero button {
-  width: 221px;
-  height: 62px;
+  width: 22.1rem;
+  height: 6.2rem;
   padding: 15px 40px;
   color: #fff;
   font-size: 2.4rem;
@@ -482,6 +626,36 @@ p {
   border-radius: 5px;
   background-color: #23A6F0;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    min-width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hero__text-content {
+    gap: 30px;
+    align-items: start;
+    text-align: left;
+    min-width: 40%;
+    margin-left: 10%;
+  }
+  .hero h1 {
+    max-width: 100%;
+    font-size: 2.8rem;
+  }
+  .hero picture {
+    display: flex;
+    max-width: 80%;
+    left: 40px;
+    position: relative;
+  }
+  .hero picture img {
+    max-width: 100%;
+  }
+  .hero__heading-description {
+    width: 376px;
+  }
 }
 
 .partners {

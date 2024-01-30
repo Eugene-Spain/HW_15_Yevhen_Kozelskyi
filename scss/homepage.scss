@@ -6,17 +6,22 @@
 
 
 .hero {
-    border-radius: 20px;
-    background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
     width: 388px;
     margin: 0 auto;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
     padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 33px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+    &__text-content {
+
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
 
     &__pre-heading {
         color: #2A7CC7;
@@ -37,8 +42,8 @@
     }
 
     button {
-        width: 221px;
-        height: 62px;
+        width: 22.1rem;
+        height: 6.2rem;
         padding: 15px 40px;
         color: #fff;
         font-size: 2.4rem;
@@ -48,6 +53,38 @@
         border-radius: 5px;
         background-color: #23A6F0;
         margin-bottom: 40px;
+    }
+
+    @media screen and (min-width:768px) {
+        min-width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
+
+        &__text-content{
+            gap: 30px;
+            align-items: start;
+            text-align: left;
+            min-width: 40%;
+            margin-left: 10%;
+        }
+
+        h1{
+            max-width: 100%;
+            font-size: 2.8rem;
+        }
+        picture{
+            display: flex;
+            max-width: 80%;
+            left: 40px;
+            position: relative;
+            img{
+                max-width: 100%;
+            }
+           
+        }
+        &__heading-description {
+            width: 376px;
+        }
     }
 }
 
@@ -515,8 +552,8 @@
             width: 204px;
             border: 1px solid #E6E6E6;
             background-color: #F9F9F9;
-            color: #737373;            
-            font-size: 1.4rem;           
+            color: #737373;
+            font-size: 1.4rem;
             letter-spacing: 0.2px;
             padding-left: 20px;
             font-weight: 500;
@@ -528,7 +565,7 @@
             font-size: 1.4rem;
             color: #fff;
             letter-spacing: 0.2px;
-            background-color:#23A6F0;
+            background-color: #23A6F0;
             font-weight: 500;
         }
 
