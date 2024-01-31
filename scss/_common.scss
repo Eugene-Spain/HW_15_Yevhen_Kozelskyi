@@ -53,6 +53,10 @@ h3 {
     color: #252B42;
     letter-spacing: 0.2px;
     margin: 0;
+
+    @media screen and (min-width:1024px) {
+        font-size: 3rem;
+    }
 }
 
 h4 {
@@ -77,6 +81,11 @@ p {
     margin: 0;
     font-size: 1.4rem;
 }
+
+figure{
+    margin: 0;
+}
+
 .material-symbols-outlined{
     width: 12px;
 }
