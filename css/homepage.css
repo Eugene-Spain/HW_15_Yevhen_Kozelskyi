@@ -1173,7 +1173,10 @@ figure {
   text-align: center;
   gap: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1220px) {
+  .featured-posts {
+    max-width: 1185px;
+  }
   .featured-posts__pre-heading {
     color: #23A6F0;
   }
@@ -1189,6 +1192,7 @@ figure {
     flex-direction: row;
     box-shadow: none;
     gap: 30px;
+    margin-bottom: 80px;
   }
   .featured-posts__list__figure-wrapper {
     position: relative;
@@ -1197,7 +1201,8 @@ figure {
     display: flex;
     gap: 10px;
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
+    left: 30px;
   }
   .featured-posts__list_picture-icons img {
     border: 1px solid transparent;
@@ -1298,25 +1303,34 @@ figure {
 .social-network {
   background-color: #FAFAFA;
   width: 100vw;
-  margin-top: -10px;
+  margin: -10px auto;
 }
 .social-network__wrapper {
   display: flex;
   flex-direction: column;
   max-width: 330px;
   margin: 0 auto;
-  padding: 53px 0 40px;
+  padding: 53px 0;
 }
 .social-network strong {
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 0.1px;
   color: #252B42;
-  margin-bottom: 27px;
 }
 .social-network__icons {
   display: flex;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .social-network {
+    margin: 0 auto;
+  }
+  .social-network__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 700px;
+  }
 }
 
 .footer {
@@ -1399,6 +1413,54 @@ figure {
   text-align: center;
   padding: 25px;
   line-height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    margin: 0 auto;
+    max-width: 685px;
+  }
+  .footer__main-list {
+    flex-direction: row;
+    max-width: 685px;
+    justify-content: space-between;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    margin-left: 30px;
+  }
+  .footer__main-list li {
+    min-width: 148px;
+  }
+  .footer__main-list li ul li .footer__main-list_heading-item {
+    font-size: 1.6rem;
+  }
+  .footer__main-list li ul li a {
+    font-size: 1.4rem;
+  }
+  .footer_email {
+    width: 184px;
+  }
+  .footer_button {
+    width: 97px;
+  }
+  .footer__rights-reserved {
+    display: flex;
+    text-align: center;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+  }
+  .footer__rights-reserved-text {
+    max-width: 1185px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .footer {
+    max-width: 1185px;
+  }
+  .footer__main-list {
+    flex-wrap: nowrap;
+    max-width: 1185px;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
