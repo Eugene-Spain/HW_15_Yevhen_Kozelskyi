@@ -1254,7 +1254,7 @@ figure {
     gap: 10px;
     align-items: center;
   }
-  .featured-posts__list_figcaption-big button p {
+  .featured-posts__list_figcaption-big button span {
     color: #23A6F0;
     font-weight: 700;
   }
